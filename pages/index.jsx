@@ -1,5 +1,6 @@
 import Link from "next/link";
 import AnimatedMessage from "../components/AnimatedMessage";
+import DelayCursor from "../components/DelayCursor";
 
 export default function Index() {
   return (
@@ -22,6 +23,12 @@ export default function Index() {
         </Link>
       </p>
       <AnimatedMessage />
+      <DelayCursor delay={0.05} />
+      <style jsx global>{`
+        * {
+          cursor: none !important;
+        }
+      `}</style>
     </div>
   );
 }
