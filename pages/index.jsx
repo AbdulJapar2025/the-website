@@ -23,24 +23,25 @@ export default function Index() {
       <h2>Selamat datang!</h2>
       <p>
         <Link href="/home">
-          <button>MULAI</button>
+          <button className="bg-blue-500 rounded-lg p-1 mr-1 hover:scale-105">
+            MULAI
+          </button>
         </Link>
         <Link href="/nbrthx">
-          <button style={{ marginLeft: "5px" }}>SVGSTEGO</button>
+          <button className="bg-blue-500 rounded-lg p-1 mr-1 hover:scale-105">
+            SVGSTEGO
+          </button>
         </Link>
         <Link href="/doom">
-          <button
-            style={{
-              marginLeft: "5px",
-              backgroundColor: "red",
-              color: "white",
-            }}
-          >
+          <button className="bg-red-500 rounded-lg p-1 mr-1 text-white hover:scale-105">
             DOOM
           </button>
         </Link>
         <Link href="/vinrex/index.html">
-          <button style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <button
+            className="bg-blue-500 rounded-lg p-1 mr-1 mt-1 hover:scale-105"
+            style={{ display: "flex", alignItems: "center", gap: "8px" }}
+          >
             <img
               src="/vinrex/assets/default_100_percent/100-error-offline.png"
               alt="Vinrex Icon"
@@ -50,20 +51,31 @@ export default function Index() {
           </button>
         </Link>
         <Link href="/snekabsurd">
-          <button style={{ marginLeft: "5px" }}>Absurd Snek Gem</button>
+          <button className="bg-blue-500 rounded-lg p-1 mr-1 mt-1 hover:scale-105">
+            Absurd Snek Gem
+          </button>
         </Link>
         <Link href="/bola-ajaib">
-          <button>Bola ajaib</button>
+          <button className="bg-blue-500 rounded-lg p-1 mr-1 mt-1 hover:scale-105">
+            Bola ajaib
+          </button>
         </Link>
         <Link href="/gabut">
-          <button>gabut</button>
+          <button className="bg-blue-500 rounded-lg p-1 mr-1 mt-1 hover:scale-105">
+            gabut
+          </button>
+        </Link>
+        <Link href="/guestbook">
+          <button className="bg-blue-500 rounded-lg p-1 mr-1 mt-1 hover:scale-105">
+            guestbook
+          </button>
         </Link>
         <Link href="/guestbook">
           <button>guestbook</button>
         </Link>
       </p>
       <AnimatedMessage />
-      <DelayCursor delay={1} />
+      <DelayCursor delay={0.01} />
       <Visitor />
       <style jsx global>{`
         * {
