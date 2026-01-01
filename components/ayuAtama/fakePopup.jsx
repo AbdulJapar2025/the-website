@@ -18,7 +18,7 @@ export default function FakeFemboyPopup() {
   const handleClose = () => {
     setCloseCount((prev) => {
       const next = prev + 1;
-      if (next >= 1) {
+      if (next >= 2) {
         setOpen(false);
       }
       return next;
@@ -114,9 +114,9 @@ export default function FakeFemboyPopup() {
 
               {/* PRESSURE TEXT */}
               <div className="text-xs text-gray-400">
-                {closeCount > 0 && closeCount < 5
-                  ? `Almost closed… ${5 - closeCount} more click${
-                      5 - closeCount > 1 ? "s" : ""
+                {closeCount > 0 && closeCount < 2
+                  ? `Almost closed… ${2 - closeCount} more click${
+                      2 - closeCount > 1 ? "s" : ""
                     }`
                   : null}
               </div>
