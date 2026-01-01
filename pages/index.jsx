@@ -79,26 +79,26 @@ export default function Index() {
         <Link href="/guestbook">
           <button>guestbook</button>
         </Link>
-         <button
-        onClick={() => setFireworksOn((v) => !v)}
-        style={{
-          backgroundColor: fireworksOn ? "green" : "red",
-          color: "white",
-          padding: "10px 16px",
-          marginBottom: "10px",
-          cursor: "pointer",
-        }}
-      >
-        KEMBANG API?!
-      </button>
+        <button
+          onClick={() => setFireworksOn((v) => !v)}
+          style={{
+            backgroundColor: fireworksOn ? "green" : "red",
+            color: "white",
+            padding: "10px 16px",
+            marginBottom: "10px",
+            cursor: "pointer",
+          }}
+        >
+          KEMBANG API?!
+        </button>
 
-      {/* aktifkan efek */}
-      <Fireworks enabled={fireworksOn} />
+        {/* aktifkan efek */}
+        <Fireworks enabled={fireworksOn} />
       </p>
       <AnimatedMessage />
-      <DelayCursor delay={0.01} />
+      <DelayCursor />
       <Visitor />
-       {/* <style jsx global>{`
+      {/* <style jsx global>{`
         * {
           cursor: none !important;
         }

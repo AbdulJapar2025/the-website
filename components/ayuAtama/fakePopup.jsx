@@ -18,7 +18,7 @@ export default function FakeFemboyPopup() {
   const handleClose = () => {
     setCloseCount((prev) => {
       const next = prev + 1;
-      if (next >= 5) {
+      if (next >= 1) {
         setOpen(false);
       }
       return next;
