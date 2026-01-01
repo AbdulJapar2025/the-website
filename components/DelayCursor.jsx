@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-export default function DelayCursor({ delay = 0.1 }) {
+export default function DelayCursor({ delay = 0.8 }) {
   const cursorRef = useRef(null);
   const target = useRef({ x: 0, y: 0 });
   const ghost = useRef({ x: 0, y: 0 });
