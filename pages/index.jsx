@@ -26,79 +26,10 @@ export default function Index() {
       <AnimeCTAButton />
       <MovingPuzzleButton />
 
-      <h2>Selamat datang!</h2>
-      <p>
-        <Link href="/home">
-          <button className="bg-blue-500 rounded-lg p-1 mr-1 hover:scale-105">
-            MULAI
-          </button>
-        </Link>
-        <Link href="/nbrthx">
-          <button className="bg-blue-500 rounded-lg p-1 mr-1 hover:scale-105">
-            SVGSTEGO
-          </button>
-        </Link>
-        <Link href="/doom">
-          <button className="bg-red-500 rounded-lg p-1 mr-1 text-white hover:scale-105">
-            DOOM
-          </button>
-        </Link>
-        <Link href="/vinrex/index.html">
-          <button
-            className="bg-blue-500 rounded-lg p-1 mr-1 mt-1 hover:scale-105"
-            style={{ display: "flex", alignItems: "center", gap: "8px" }}
-          >
-            <img
-              src="/vinrex/assets/default_100_percent/100-error-offline.png"
-              alt="Vinrex Icon"
-              style={{ width: "24px", height: "24px" }}
-            />
-            VINREX GAME
-          </button>
-        </Link>
-        <Link href="/snekabsurd">
-          <button className="bg-blue-500 rounded-lg p-1 mr-1 mt-1 hover:scale-105">
-            Absurd Snek Gem
-          </button>
-        </Link>
-        <Link href="/bola-ajaib">
-          <button className="bg-blue-500 rounded-lg p-1 mr-1 mt-1 hover:scale-105">
-            Bola ajaib
-          </button>
-        </Link>
-        <Link href="/gabut">
-          <button className="bg-blue-500 rounded-lg p-1 mr-1 mt-1 hover:scale-105">
-            gabut
-          </button>
-        </Link>
-        <Link href="/guestbook">
-          <button className="bg-blue-500 rounded-lg p-1 mr-1 mt-1 hover:scale-105">
-            guestbook
-          </button>
-        </Link>
-        <Link href="/guestbook">
-          <button>guestbook</button>
-        </Link>
-         <button
-        onClick={() => setFireworksOn((v) => !v)}
-        style={{
-          backgroundColor: fireworksOn ? "green" : "red",
-          color: "white",
-          padding: "10px 16px",
-          marginBottom: "10px",
-          cursor: "pointer",
-        }}
-      >
-        KEMBANG API?!
-      </button>
-
-      {/* aktifkan efek */}
-      <Fireworks enabled={fireworksOn} />
-      </p>
       <AnimatedMessage />
-      <DelayCursor delay={0.01} />
+      <DelayCursor />
       <Visitor />
-       {/* <style jsx global>{`
+      {/* <style jsx global>{`
         * {
           cursor: none !important;
         }
