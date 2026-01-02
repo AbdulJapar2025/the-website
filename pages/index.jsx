@@ -5,11 +5,9 @@ import DelayCursor from "../components/DelayCursor";
 import AnimeCTAButton from "@components/ayuAtama/button";
 import FakeFemboyPopup from "@components/ayuAtama/fakePopup";
 import MovingPuzzleButton from "../components/MovingPuzzleButton";
-import Fireworks from "../components/Fireworks";
+import AICopilot from "@components/AICopilot/AICopilot";
 
 export default function Index() {
-  const [fireworksOn, setFireworksOn] = useState(false);
-
   function Visitor() {
     return (
       <div>
@@ -34,6 +32,7 @@ export default function Index() {
           cursor: none !important;
         }
       `}</style> */}
+      <AICopilot />
     </div>
   );
 }
